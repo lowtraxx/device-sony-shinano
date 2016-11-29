@@ -26,3 +26,10 @@ PRODUCT_PACKAGES += \
 # Sensors config
 PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/system/etc/sec_config:system/etc/sec_config
+
+# NFC
+PRODUCT_PACKAGES += \
+   nfc_nci.pn54x.default
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml
