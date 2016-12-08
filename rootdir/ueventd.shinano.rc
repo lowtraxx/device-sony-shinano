@@ -158,4 +158,3 @@
 
 # BT/FM/ANT+ V4L2
 /dev/brcm_bt_drv          0660   bluetooth  net_bt_stack
-/dev/radio0               0666   root       root
