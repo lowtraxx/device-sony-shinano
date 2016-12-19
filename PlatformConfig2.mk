@@ -18,3 +18,6 @@ BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 # Kernel
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_SOURCE := kernel/sony/msm
+
+# Nfc
+BOARD_NFC_CHIPSET := pn547
