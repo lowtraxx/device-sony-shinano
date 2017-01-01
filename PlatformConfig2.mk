@@ -15,12 +15,15 @@
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
+# CM Hardware
+BOARD_HARDWARE_CLASS += device/sony/shinano/cmhw
+
 # Kernel
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_SOURCE := kernel/sony/msm
 
-# NFC
-BOARD_NFC_CHIPSET := pn547
-
 # Bluetooth
 BOARD_BLUEDROID_VENDOR_CONF := device/sony/shinano/bluetooth/vnd_generic.txt
+
+# Nfc
+BOARD_NFC_CHIPSET := pn547
