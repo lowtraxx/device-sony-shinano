@@ -12,12 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Platform path
+PLATFORM_COMMON_PATH := device/sony/shinano
+
 $(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 $(call inherit-product, device/sony/common/common.mk)
 
 SOMC_PLATFORM := shinano
 
-SONY_ROOT := device/sony/shinano/rootdir
+SONY_ROOT := $(PLATFORM_COMMON_PATH)/rootdir
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -85,6 +88,11 @@ PRODUCT_PACKAGES += \
     FMRadio \
     brcm-uim-sysfs \
     libfmjni
+
+# Camera HAL1 hack on 7.x
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.stagefright.legacyencoder=true \
+    media.stagefright.less-secure=true
 
 # RILD
 PRODUCT_PROPERTY_OVERRIDES += \
