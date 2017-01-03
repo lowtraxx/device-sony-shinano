@@ -16,7 +16,7 @@
 PLATFORM_COMMON_PATH := device/sony/shinano-common
 
 $(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
-$(call inherit-product, device/sony/common/common.mk)
+$(call inherit-product, device/sony/common-aosp/common.mk)
 
 SOMC_PLATFORM := shinano
 
