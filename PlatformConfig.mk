@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Platform path
-PLATFORM_COMMON_PATH := device/sony/shinano
+PLATFORM_COMMON_PATH := device/sony/shinano-common
 
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
