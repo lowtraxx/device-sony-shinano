@@ -1,6 +1,6 @@
 [
   {
-    "repository": "android_device_sony_common-aosp",
-    "target_path": "device/sony/common-aosp"
+    "repository": "android_device_sony_common",
+    "target_path": "device/sony/common"
   }
 ]

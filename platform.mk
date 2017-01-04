@@ -13,10 +13,10 @@
 # limitations under the License.
 
 # Platform path
-PLATFORM_COMMON_PATH := device/sony/shinano-common
+PLATFORM_COMMON_PATH := device/sony/shinano
 
 $(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
-$(call inherit-product, device/sony/common-aosp/common.mk)
+$(call inherit-product, device/sony/common/common.mk)
 
 SOMC_PLATFORM := shinano
 
