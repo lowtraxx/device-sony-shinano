@@ -33,7 +33,11 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-   nfc_nci.pn54x.default
+    nfc_nci.pn54x.default
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml
+
+## Lock Screen rotation override
+PRODUCT_PROPERTY_OVERRIDES += \
+    lockscreen.rot_override=true
